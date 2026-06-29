@@ -69,7 +69,6 @@ const images = [
 
 const galleryContainer = document.querySelector(".gallery");
 
-// Generate markup
 const galleryMarkup = images
   .map(
     ({ preview, original, description }) => `
@@ -85,10 +84,8 @@ const galleryMarkup = images
   )
   .join("");
 
-// Add markup to DOM
 galleryContainer.innerHTML = galleryMarkup;
 
-// Initialize SimpleLightbox
 new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,

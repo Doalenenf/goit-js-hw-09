@@ -1,23 +1,7 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
-
-/* Task styles */
 @import url('./menu-style.css');
 @import url('./gallery-style.css');
 @import url('./form-style.css');

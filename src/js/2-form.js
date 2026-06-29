@@ -7,7 +7,6 @@ const formData = {
 
 const form = document.querySelector(".feedback-form");
 
-// Populate form on page load
 const populateForm = () => {
   const savedData = localStorage.getItem(STORAGE_KEY);
   if (!savedData) return;
@@ -24,7 +23,6 @@ const populateForm = () => {
   }
 };
 
-// Handle input changes (delegate event listener on the form)
 const handleInput = (event) => {
   const name = event.target.name;
   const value = event.target.value;
@@ -35,20 +33,16 @@ const handleInput = (event) => {
   }
 };
 
-// Handle form submission
 const handleSubmit = (event) => {
   event.preventDefault();
 
-  // Validate fields
   if (!formData.email || !formData.message) {
     alert("Fill please all fields");
     return;
   }
 
-  // Output object to console
   console.log({ ...formData });
 
-  // Clear storage and reset state
   localStorage.removeItem(STORAGE_KEY);
   formData.email = "";
   formData.message = "";
@@ -58,5 +52,4 @@ const handleSubmit = (event) => {
 form.addEventListener("input", handleInput);
 form.addEventListener("submit", handleSubmit);
 
-// Initialize form populating
 populateForm();
