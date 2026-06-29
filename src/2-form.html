@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2 - Feedback Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back to menu</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <div class="container">
+          <h1 class="visually-hidden">Feedback Form</h1>
+          <div class="form-wrapper">
+            <form class="feedback-form" autocomplete="off">
+              <label class="form-label">
+                Email
+                <input class="form-input" type="email" name="email" autofocus />
+              </label>
+              <label class="form-label">
+                Message
+                <textarea class="form-textarea" name="message" rows="8"></textarea>
+              </label>
+              <button class="form-btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/2-form.js"></script>
+  </body>
+</html>
