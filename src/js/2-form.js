@@ -49,7 +49,7 @@ const handleSubmit = (event) => {
   form.reset();
 };
 
+populateForm();
+
 form.addEventListener("input", handleInput);
 form.addEventListener("submit", handleSubmit);
-
-populateForm();
